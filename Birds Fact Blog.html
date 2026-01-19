@@ -1,0 +1,457 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+
+<title>Human Body Facts</title> 
+ 
+ <style>
+             
+             
+             *{
+             margin:0;
+             padding:0;
+             }
+             
+             #head{
+             position:fixed;
+             width:100%;
+             box-shadow:0 0 5px black;
+             }
+             nav{
+             padding:2% 6%;
+             display:flex;
+             justify-content:space-between;
+             align-items:center;
+             }
+             
+             nav img{
+             width:220px;
+             }  
+             
+             .nav-links{
+             flex:1;
+             text-align:right;
+             }
+             
+             nav .fa{
+             display:none;
+             }
+             
+             .nav-links ul li{
+             list-style:none;
+             display:inline-block;
+             padding:8px 12px;
+             position:relative;
+             }
+             
+             .nav-links ul li a{
+             color:white; 
+             text-decoration:none;
+             font-size:13px;   
+             }    
+             
+             .nav-links ul li::after{
+             content:'';
+             width:0%;
+             height:2px;
+             display:block;
+             margin:auto;
+             background:#F44336;
+             transition:0.5s;
+             }      
+             
+             .nav-links ul li:hover::after{
+             width:100%;
+             }
+             
+             #head{
+             display:;
+             background-image:url("WebBackground.jpg");
+             } 
+             
+             
+             
+             .factheading{
+             width:90%;
+             padding:5%;
+             text-decoration:none;
+             text-align:center;
+             font-family:Atkinson;
+             font-size:25px;
+             color:#043367;
+             font-weight:bold;
+             }
+             
+             .fact1{
+             width:70%;
+             font-family:Tahoma,Arial,sans-serif;
+             font-size:15px;
+             margin-left:15%;    
+             text-align:justify;
+             } 
+             
+             .fact11{
+             color:#084578;
+             font-size:21px;
+             width:70%;
+             font-weight:bold;
+             margin-left:14%;
+             text-decoration:none;
+             font-family:Arial,sans-serif;
+             }
+             
+             .fact1img{
+             width:70%;
+             height:auto;
+             margin-left:15%;  
+             }
+             
+             .fact2img{
+             width:40%;
+             height:auto;
+             margin-left:30%;
+             border-radius:0px;
+             }
+             
+             #more {display: none;}
+             
+             #myBtn{
+             width:40%;
+             margin-left:30%;
+             font-size:150%;
+             color:#184FA7;
+             font-weight:bold;
+             background-color:white;
+             border-radius:2px;
+             height:100%;
+             }
+             
+             
+             
+             
+             @media all and (max-width:768px){
+             
+             
+             nav .fa{
+             display:block;
+             color:#FFF;
+             margin:10px;
+             font-size:22px;
+             cursor:pointer;
+             text-align:;
+             }
+             
+             
+             .nav-links ul li{
+             display:block;
+             }
+             
+             
+             .nav-links{
+             position:absolute;
+             background:#F44336;
+             height:100vh;
+             width:200px;
+             top:0;
+             right:0;
+             display:none;
+             right:-200px;
+             text-align:left;
+             z-index:2;
+             transition:1s;
+             background-color:#232323;
+             }
+             
+             .nav-links ul li a{
+             font-size:25px;
+             font-family:play;
+             text-decoration:none;
+             color:#EBEBEB;
+             }
+             
+             
+             .nav-links ul li a:hover{
+             color:red;
+             text-decoration:none;
+             transition:0.5s;
+             }
+             
+             
+             .nav-links ul{
+             padding:20px;
+             }
+             
+             nav img{
+             width:200px;
+             margin-top:9px;
+             }
+             
+             #head{
+             width:100%;
+             margin-right:0;
+             position:fixed;
+             background-image:url("WebBackground.jpg");
+             box-shadow:0 0 5px black;
+             z-index:2;
+             }
+             
+             
+             
+             
+             .factheading{
+             width:100%;
+             padding:5%;
+             width:90%;
+             margin-left:0;
+             text-align:center;
+             font-family:Atkinson;
+             font-size:25px;
+             color:#043367;
+             font-weight:bold;
+             }
+             
+             .fact1{
+             width:90%;
+             font-family:Tahoma,Arial,sans-serif;
+             font-size:18px;
+             margin-left:5%;
+             text-align:justify;
+             } 
+             
+             .fact11{
+             color:#084578;
+             font-size:24px;
+             width:100%;
+             font-weight:bold;
+             margin-left:1%;
+             text-decoration:none;
+             font-family:Arial,sans-serif;
+             }
+             
+             
+             .fact1img{
+             width:90%;
+             height:auto;
+             margin-left:5%;
+             border-radius:1px;
+             }
+             
+             #more {display: none;}
+             
+             #myBtn{
+             width:90%;
+             margin-left:5%;
+             font-size:150%;
+             color:#184FA7;
+             font-weight:bold;
+             background-color:white;
+             border-radius:2px;
+             height:100%;
+             }
+             
+             #myBtn:hover{
+             color:teal;
+             background-color:whitesmoke;
+             }     
+             
+             }    
+             
+             
+             
+ </style>
+ 
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+         
+         
+         <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         
+         </head>
+         
+         <body>
+         <div id="head">
+         <nav>
+         <a ><img src="logo.png"></img></a>
+         <div class="nav-links" id="navLinks">
+         <i class="fa fa-times" style="font-size:30px; font-weight:light;" onclick="hideMenu()"></i>
+         <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="Fact Blog.html">FACTS</a></li>
+         <li><a href="Earn Money Online Blog.html">BLOGS</a></li>
+         <li><a href="Contact Page.html">CONTACT</a></li>
+         <li><a href="About Page.html">ABOUT</a></li>
+         </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         </div>    <br><br><br>
+         
+         
+   
+ <p class="factheading">30-Interesting Facts About Birds And Extinted Birds, that You Should Know</p>
+       <br>
+       <br>
+   <p>
+   
+    <a class="fact11">#Fact.1 -</a><br><br><p class="fact1">To attract a mate, a male Frigate bird will blow up its red throat pouch. The pouch can be as big as a person's head.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact1img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.2 -</a><br><br><p class="fact1">The slowest flying bird is the American Woodcock. It can fly at just 5 mph (8 kph). When hummingbirds hover, they move at 0 mph. Additionally, hummingbirds are the only birds that can fly backwards under power, registering a negative speed.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact2img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.3 -</a><br><br><p class="fact1">A special arrangement of blood vessels cools the blood going out to the feet and warms the blood coming back, so even when standing on the ice, birds don't lose too much heat.</p>
+      <br>
+      
+      <br><br><br>
+    <a class="fact11">#Fact.4 -</a><br><br><p class="fact1">Woodcocks and many ducks have their eyes placed at the sides of their heads so that they have a 360-degree field of vision.</p>
+      <br>
+ 
+      <br><br><br>
+    <a class="fact11">#Fact.5 -</a><br><br><p class="fact1">The fastest flying bird in a dive is the Peregrine Falcon. It averages speeds of over 110 mph (180 kph).</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact5img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.6 -</a><br><br><p class="fact1">The most talkative bird in the world is the African gray parrot. One parrot could say over 800 words. Most species of parrots can learn only 50.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact6img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.7 -</a><br><br><p class="fact1">Over time, a surprising number of birds have lost their ability to fly. Being flightless has several advantages. For example, a flightless bird doesn't need to develop and carry large flight muscles or burn up the energy that flying requires. A flightless bird can also get by with less food, which means it can survive in places where food is scarce.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact7img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.8 -</a><br><br><p class="fact1">No other living being other than birds have feathers. The main function is to help them fly. They also waterproof birds and protect them from UV rays and other harmful elements.</p>
+      <br>
+    
+      <br><br><br>
+    <a class="fact11">#Fact.9 -</a><br><br><p class="fact1">More than 150 kinds of birds have become extinct since 1600, though many more may have died out that scientists don't know about. It wasn't just European explorers that killed bird species. Archeology shows that when people first arrived in ancient times in Hawaii and on islands in the South Pacific and Caribbean, they killed many birds Europeans had never seen before.</p>
+      <br>
+      
+      <br><br><br>
+    <a class="fact11">#Fact.10 -</a><br><br><p class="fact1">A Bald Eagle is called "bald" because it is piebald (black and white), not because it doesn't have any feathers.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact10img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.11 -</a><br><br><p class="fact1">The ostrich is the only bird that willingly takes care of other females' eggs.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact11img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.12 -</a><br><br><p class="fact1">The Fieldfare birds have a special way to attack an enemy bird. They gang up on it and make it fly to the ground. Then the Fieldfares fly into the air and drop poop on the bird.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact12img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.13 -</a><br><br><p class="fact1">The bird that lays the smallest egg in the world is the bee hummingbird. Its egg is just under 0.5'' x 0.25'' and weighs a mere 0.02 oz.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact13img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.14 -</a><br><br><p class="fact1">In the continental U.S. alone, between 1.4 billion and 3.7 billion birds are killed by cats annually.</p>
+      <br>
+    
+      <br><br><br>
+    <a class="fact11">#Fact.15 -</a><br><br><p class="fact1">What keeps a bird up in the air is the shape of its wings. The first humans to discover how birds stay aloft were Australian Aborigines when they invented the boomerang.</p>
+      <br>
+     
+      <br><br><br>
+    <a class="fact11">#Fact.16 -</a><br><br><p class="fact1">Owls cannot swivel their eyes. Instead they move their heads completely around to see straight behind them. They live on every continent except Antarctica. Soft fringes on their wings make their flight essentially silent.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact16img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.17 -</a><br><br><p class="fact1">A vulture named the Lammergeyer will fly with bones high in the air and then drop them onto rocks. It will then eat the smashed bones, like a circus sword swallower.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact17img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.18 -</a><br><br><p class="fact1">The earliest known bird is the Archaeopteryx. It lived during the Jurassic period 150 million years ago. Because it did not have the basic features of flight, scientists are uncertain if it could fly.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact18img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.19 -</a><br><br><p class="fact1">Before 1840, there were thousands of millions of passenger pigeons in North America. However, they were slaughtered for food until only one was left, a female called Martha. She died when she was 12 years old in 1914, in a zoo in Ohio.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact19img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.20 -</a><br><br><p class="fact1">The Australian pelican has the longest bill of any bird in the world. It is nearly 2 feet (0.5 m) in length. The sword-billed hummingbird, with its 3.9-inch (10 cm) bill, is the only bird with a bill that's longer than its body.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact20img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.21 -</a><br><br><p class="fact1">The bird with the most feathers is the whistling swan, with up to 25,000 feathers. Hummingbirds, on the other hand, are so small that they have fewer than 1,000.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact21img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.22 -</a><br><br><p class="fact1">Many birds consume 1/5 of their body weight in food every day to get the energy they need to fly.</p>
+      <br>
+      
+      <br><br><br>
+    <a class="fact11">#Fact.23 -</a><br><br><p class="fact1">The Sooty Tern spends the most time in the air than any other bird. It takes off over the ocean and flies for at least 3 years without settling on water or land. Swifts also spend most of their lives in the air. They can even sleep in the air by gliding on air currents with their wings outstretched.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact23img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.24 -</a><br><br><p class="fact1">The Japanese crested ibis is one of the rarest birds in the world. Probably fewer than 50 crested ibises are alive today.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact24img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.25 -</a><br><br><p class="fact1">The bird with the greatest wingspan of any other bird is the Wandering Albatross at up to 11.8 ft (3.63 m).</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact25img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.26 -</a><br><br><p class="fact1">Approximately 75% of wild birds live for less than a year. The larger the bird, the more likely it is to live longer. The large wandering albatross, for example, can live for up to 80 years.</p>
+      <br>
+      
+      <br><br><br>
+    <a class="fact11">#Fact.27 -</a><br><br><p class="fact1">Social weaverbirds live in huge communal nests that look like a huge haystack spread across a treetop. Some nests can weigh a few tons, have over 400 birds living in them, and may be 100 years old.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact27img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.28 -</a><br><br><p class="fact1">Birds don't fall off of a branch when they sleep because their toes automatically clench around the twig they are standing on. Because the grabbing action is done by tendons rather than muscles, the birds can sleep without danger of falling.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact28img.jpg"></img>
+      <br><br><br>
+    <a class="fact11">#Fact.29 -</a><br><br><p class="fact1">A group of crows is called a murder or congress. A group of owls is called a parliament, wisdom, or study. A group of flamingos is called a flamboyance.</p>
+      <br>
+ 
+      <br><br><br>
+    <a class="fact11">#Fact.30 -</a><br><br><p class="fact1">The biggest bird that ever existed on Earth is the flightless elephant bird, which is now extinct. It weighed about 1000 lb. (450 kg.). Seven ostrich eggs would fit inside one elephant bird's egg. Elephant birds died out 400 years ago, but people still find pieces of their tough-shelled eggs.</p>
+      <br>
+      <img class="fact1img" src="Web/Birdfact30img.jpg"></img>
+      <br><br><br>
+   
+      
+      <!---------javascript for toggle------->
+      
+      <script type="text/javascript">
+      
+      var navLinks = document.getElementById("navLinks");
+      
+      function showMenu(){
+      navLinks.style.right = "0";
+      navLinks.style.display = "inline";
+      
+      }
+      function hideMenu(){
+      navLinks.style.right = "-200px";
+      navLinks.style.display = "none"
+      }
+      
+      </script>
+      
+      
+      
+</html>

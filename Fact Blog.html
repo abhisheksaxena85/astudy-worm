@@ -1,0 +1,616 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+
+<title>Fact Blog</title> 
+ 
+ <style>
+       
+       *{ 
+       margin:0;
+       padding:0;
+       }
+     
+         
+     #head{
+     position:fixed;
+     width:100%;
+     box-shadow:0 0 5px black;
+     }
+     nav{
+     padding:2% 6%;
+     display:flex;
+     justify-content:space-between;
+     align-items:center;
+     }
+     
+     nav img{
+     width:220px;
+     }  
+     
+     .nav-links{
+     flex:1;
+     text-align:right;
+     }
+     
+     nav .fa{
+     display:none;
+     }
+     
+     .nav-links ul li{
+     list-style:none;
+     display:inline-block;
+     padding:8px 12px;
+     position:relative;
+     }
+     
+     .nav-links ul li a{
+     color:white; 
+     text-decoration:none;
+     font-size:13px;   
+     }    
+     
+     .nav-links ul li::after{
+     content:'';
+     width:0%;
+     height:2px;
+     display:block;
+     margin:auto;
+     background:#F44336;
+     transition:0.5s;
+     }      
+     
+     .nav-links ul li:hover::after{
+     width:100%;
+     }
+     
+     #head{
+     display:;
+     background-image:url("WebBackground.jpg");
+     } 
+     
+     
+     
+
+     .fact-group{
+       width:70% ;
+      
+     }
+       
+       .footer{
+       background-color:#202020;
+       margin:0;
+       padding:0;
+       width:auto; 
+       height:10% ;
+       text-align:center;
+       color:white;
+       }   
+       
+       
+       
+       
+       .follow{
+       color:F9F9F9;
+       text-align:center;
+       font-family:karla;
+       font-size:110%;  
+       padding:;
+       margin-left:3%;
+       font-weight:lighter;
+       text-align:left;
+       word-spacing:;
+       }  
+       
+       .last{
+       color:#999999;
+       font-size:10px;
+       font-family:keania;
+       font-weight:normal;
+       width:100%;
+       word-spacing:0;
+       }
+       
+       
+       .footermenu{
+       list-style-type:none;
+       font-family:keania; 
+       width:auto;	 
+       font-size:110%;
+       word-spacing:;
+       text-align:left;
+       margin-left:3%;
+       color:#F5F5F5;
+       font-weight:lighter;
+       }
+       
+       .footericons{
+       
+       width:100%;
+       font-size:200%;
+       text-align:left;
+       text-decoration:none;
+       }
+       
+       .fa {  
+       padding:;  
+       text-align:center;    
+       font-size:100%;  
+       width:6%;  
+       text-decoration:none;
+       }  
+       .fa-facebook {
+       background:#;  
+       border-radius:10%;  
+       color: white;  
+       }  
+       .fa-twitter {
+       background:#;   
+       border-radius:10%;
+       color: white;  
+       }  
+       
+       .fa-instagram { 
+       background:#;
+       border-radius:10%;  
+       color: white;  
+       }  
+       .fa-youtube {
+       background:#;  
+       border-radius:10%;  
+       color: white;  
+       }  
+       .fa-google {  
+       background:#;
+       border-radius:10%;   
+       color: white;  
+       }  
+       
+       .fa:hover {  
+       color:white;
+       }  
+       
+       position{
+       color:black;
+       }
+       
+       
+       h5{
+       width:auto;
+       font-size:180%;
+       font-family:fantasy;
+       padding:3%;
+       color:pink;
+       text-align:left;
+       margin:0;
+       }  
+       
+       
+       
+       
+       .blogs{
+       width:100%;
+       text-align:center;
+       font-size:30px;
+       font-weight:bold;
+       color:#1A867F;
+       font-family:keania;
+       text-decoration:underline;
+       }
+       
+       .blogtext{
+       width:90%;
+       height:auto;
+       font-size:9px; 
+       padding:2%;
+       font-family:monospace;
+       font-style:italic;
+       text-align:left;
+       font-weight:lighter;
+       }
+       
+       .blog{
+       width:90%;
+       padding:5%;
+       height:auto;
+       font-size:26px;
+       font-family:Tahoma,Arial,sans-serif;
+       color:#192390;
+       font-weight:bold;
+       }
+       
+       .facttype,.sciencetype,.othertype{
+       width:100%;
+       color:#505050;
+       text-decoration:none;
+       font-family:keania; 
+       font-size:18px;
+       display:list-item;
+       margin-left:7%;
+       list-style-type:decimal;
+       }
+   
+
+       
+       
+       
+       
+ @media all and (max-width:768px){
+       
+       nav .fa{
+       display:block;
+       color:#FFF;
+       margin:10px;
+       font-size:22px;
+       cursor:pointer;
+       }
+       
+       
+       .nav-links ul li{
+       display:block;
+       }
+       
+       
+       .nav-links{
+       position:absolute;
+       background:#F44336;
+       height:100vh;
+       width:200px;
+       top:0;
+       right:0;
+       display:none;
+       right:-200px;
+       text-align:left;
+       z-index:2;
+       transition:1s;
+       background-color:#232323;
+       }
+       
+       .nav-links ul li a{
+       font-size:25px;
+       font-family:play;
+       text-decoration:none;
+       color:#EBEBEB;
+       }
+       
+       
+       .nav-links ul li a:hover{
+       color:red;
+       text-decoration:none;
+       transition:0.5s;
+       }
+       
+       
+       .nav-links ul{
+       padding:20px;
+       }
+       
+       nav img{
+       width:200px;
+       margin-top:9px;
+       }
+       
+       #head{
+       width:100%;
+       margin-right:0;
+       position:fixed;
+       background-image:url("WebBackground.jpg");
+       box-shadow:0 0 5px black;
+       z-index:2;
+       }
+       
+       
+      .fact-group{
+      width:auto;
+      } 
+      
+       .footer{
+       background-color:#202020;
+       margin:0;
+       padding:0;
+       width:auto; 
+       height:auto;
+       word-spacing:2vh;
+       text-align:center;
+       color:white;
+       position:relative;
+       }   
+       
+       
+       
+       
+       .follow{
+       color:F9F9F9;
+       text-align:center;
+       font-family:karla;
+       font-size:110%;  
+       padding:;
+       margin-left:3%;
+       font-weight:lighter;
+       text-align:left;
+       word-spacing:;
+       }  
+       
+       .last{
+       color:#999999;
+       font-size:12px;
+       font-family:keania;
+       font-weight:normal;
+       width:100%;
+       word-spacing:0;
+       }
+       
+       
+       .footermenu{
+       list-style-type:none;
+       font-family:keania; 
+       width:auto;	 
+       font-size:110%;
+       word-spacing:;
+       text-align:left;
+       margin-left:3%;
+       color:#F5F5F5;
+       font-weight:lighter;
+       }
+       
+       .footericons{
+       
+       width:90%;
+       font-size:200%;
+       text-align:left;
+       padding:3%;
+       }
+    
+       .fa {  
+       padding:;  
+       text-align:center;    
+       font-size:100%;  
+       width:6%;  
+       }  
+       .fa-facebook {
+       background:#;  
+       border-radius:10%;  
+       color: white;  
+       }  
+       .fa-twitter {
+       background:#;   
+       border-radius:10%;
+       color: white;  
+       }  
+       
+       .fa-instagram { 
+       background:#;
+       border-radius:10%;  
+       color: white;  
+       }  
+       .fa-youtube {
+       background:#;  
+       border-radius:10%;  
+       color: white;  
+       }  
+       .fa-google {  
+       background:#;
+       border-radius:10%;   
+       color: white;  
+       }  
+       
+       .fa:hover {  
+       color:white;
+       }  
+       
+       position{
+       color:black;
+       }
+       
+       
+      h5{
+      width:auto;
+      font-size:180%;
+      font-family:fantasy;
+      padding:3%;
+      color:pink;
+      text-align:left;
+      margin:0;
+       }
+     
+    
+     
+     
+     
+    .blogs{
+    width:100%;
+    height:auto;
+    font-family:keania;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+    color:#1A867F;
+    text-decoration:underline;
+    }
+    
+   .blogtext{
+   width:90%;
+   height:auto;
+   font-size:9px;
+   font-family:monospace;
+   font-style:italic;
+   text-align:left;
+   font-weight:lighter;
+   }
+    
+   .blog{
+   width:90%;
+   height:auto;
+   font-size:25px;
+   font-family:Tahoma,Arial,sans-serif;
+   text-align:left;
+   color:#687C00;
+   }
+   
+   .facttype,.sciencetype,.othertype{
+    width:100%;
+    color:#303030;
+    text-decoration:none;
+    margin-left:11%;
+    font-family:keania;
+    font-size:20px;
+    display:list-item;
+   }
+
+ .allfact{
+    width:90%;
+ }   
+    
+    
+    
+   }    
+       
+ </style>
+ 
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+
+<body>
+           <div id="head">
+                    <nav>
+                       <a ><img src="logo.png"></img></a>
+                          <div class="nav-links" id="navLinks">
+                              <i class="fa fa-times" style="font-size:30px; text-align:right; font-weight:light;" onclick="hideMenu()"></i>
+                                 <ul>
+                                    <li><a href="index.html">HOME</a></li>
+                                    <li><a href="Fact Blog.html">FACTS</a></li>
+                                    <li><a href="Earn Money Online Blog.html">BLOGS</a></li>
+                                    <li><a href="Contact Page.html">CONTACT</a></li>
+                                    <li><a href="About Page.html">ABOUT</a></li>
+                                </ul>
+                         </div>
+                             <i class="fa fa-bars" onclick="showMenu()"></i>
+                    </nav>
+           </div>
+ 
+
+
+       <!--Types of  Facts Blog-->
+       
+       
+<br><br><br><br><br>
+     <p class="blogs">Some Intresting Facts that you will like</p><br>
+           <p class="blogtext"><b>Notice-</b>Thses all content is only for knowledge purpose.</p> <br> 
+            
+    <div class="fact-group">     
+     <p class="blog">FACTS About - </p> <br>
+         <p class="allfact">
+           <a class="facttype" href="Human Body Fact Blog.html">Human Body</a><br><br>
+           
+           <a class="facttype" href="Space Fact Blog.html">Space and Space History.</a><br><br>
+           
+           <a class="facttype" href="Birds Fact Blog.html">Birds and their unique abilities.</a><br><br>
+           
+           <a class="facttype" href="Math Fact Blog.html">Maths and their Discoveries </a><br><br>
+           
+           <a class="facttype" href="Nuclear Energy Fact Blog.html">Nuclear Energy and their Bad and Good impact.</a><br><br>
+           
+           <a class="facttype" href="Technology Fact Blog.html">Technology Development.</a><br><br>
+           
+           <a class="facttype" href="Music Fact Blog.html">Music and effect of Music.</a><br><br>
+           
+           <a class="facttype" href="Money Fact Blog.html">Money and it's History.</a><br><br>
+           
+           <a class="facttype" href="Crazy Law Fact Blog.html">Crazy Laws that will shock you.</a><br><br>
+           
+           <a class="facttype" href="History Fact Blog.html">History</a><br><br>
+           
+           <a class="facttype" href="Health & Fitness Fact Blog.html">Health & Fitness</a><br><br>
+           
+           <a class="facttype" href="Global Warming Fact Blog.html">Global Warming and it's Cause.</a><br><br>
+           
+           <a class="facttype" href="Diseases & Disorders Fact Blog.html">Diseases & Disorders</a><br><br>
+           
+           <a class="facttype" href="Earth Fact Blog.html">Earth.</a><br><br>
+           
+           <a class="facttype" href="Global Issues Fact Blog.html">Global Issues </a><br><br>
+           
+           <a class="facttype" href="Football Fact Blog.html">Football PlayGame.</a><br><br>
+           
+           <a class="facttype" href="World Records Fact Blog.html">World Records which are unbreakable</a><br><br>
+         </p>
+         
+         <br>
+         <br>
+   
+   </div>
+   
+     <!--Footer Of Web Page -->
+  
+    <footer class="footer">
+         <h5>About</h5>
+         
+         <div class="footermenu">
+                <li>Some FACTS</li>
+                <li>Blogs</li>
+                <li>Theories</li>
+                <li>Recent Updates</li>
+         </div>
+         <br>
+         <br>
+         <h2 class="follow">Follow Us On</h2>
+         
+         <br>
+         <div class="footericons">   
+          
+          <a href="https://youtube.com/channel/UCgObkxrTfL8i82tKlEePzlw" class="fa fa-youtube"></a>  
+          
+          <a href="https://www.google.com" class="fa fa-google"></a>  
+          </div>
+          <br>
+       
+         <h2 class="last"> &copy;Copyright 2021 AStudy-WORM.Inc All Rights Reserved.</h2>
+           
+         
+    </footer>
+    
+ <!---------javascript for toggle------->
+ 
+ <script type="text/javascript">
+ 
+ var navLinks = document.getElementById("navLinks");
+ 
+ function showMenu(){
+ navLinks.style.right = "0";
+ navLinks.style.display = "inline";
+ 
+ }
+ function hideMenu(){
+ navLinks.style.right = "-200px";
+ navLinks.style.display = "none"
+ }
+
+ 
+ 
+ </script>
+</body>
+
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+<meta name="viewport" content="width=device-width,initial scale=1.0">
+
+<title>30-Strange Facts About Global Issues</title> 
+ 
+ <style>
+       
+       *{
+       margin:0;
+       padding:0;
+       }
+       
+       #head{
+       position:fixed;
+       width:100%;
+       box-shadow:0 0 5px black;
+       }
+       nav{
+       padding:2% 6%;
+       display:flex;
+       justify-content:space-between;
+       align-items:center;
+       }
+       
+       nav img{
+       width:220px;
+       }  
+       
+       .nav-links{
+       flex:1;
+       text-align:right;
+       }
+       
+       nav .fa{
+       display:none;
+       }
+       
+       .nav-links ul li{
+       list-style:none;
+       display:inline-block;
+       padding:8px 12px;
+       position:relative;
+       }
+       
+       .nav-links ul li a{
+       color:white; 
+       text-decoration:none;
+       font-size:13px;   
+       }    
+       
+       .nav-links ul li::after{
+       content:'';
+       width:0%;
+       height:2px;
+       display:block;
+       margin:auto;
+       background:#F44336;
+       transition:0.5s;
+       }      
+       
+       .nav-links ul li:hover::after{
+       width:100%;
+       }
+       
+       #head{
+       display:;
+       background-image:url("WebBackground.jpg");
+       } 
+       
+       
+       
+       .factheading{
+       width:90%;
+       padding:5%;
+       text-decoration:none;
+       text-align:center;
+       font-family:Atkinson;
+       font-size:25px;
+       color:#043367;
+       font-weight:bold;
+       }
+       
+       .fact1{
+       width:70%;
+       font-family:Tahoma,Arial,sans-serif;
+       font-size:15px;
+       margin-left:15%;    
+       text-align:justify;
+       } 
+       
+       .fact11{
+       color:#084578;
+       font-size:21px;
+       width:70%;
+       font-weight:bold;
+       margin-left:14%;
+       text-decoration:none;
+       font-family:Arial,sans-serif;
+       }
+       
+       .fact1img{
+       width:70%;
+       height:auto;
+       margin-left:15%;  
+       }
+       
+       .fact2img{
+       width:40%;
+       height:auto;
+       margin-left:30%;
+       border-radius:0px;
+       }
+       
+       #more {display: none;}
+       
+       #myBtn{
+       width:40%;
+       margin-left:30%;
+       font-size:150%;
+       color:#184FA7;
+       font-weight:bold;
+       background-color:white;
+       border-radius:2px;
+       height:100%;
+       }
+       
+       
+       
+       
+@media all and (max-width:768px){
+       
+       
+       nav .fa{
+       display:block;
+       color:#FFF;
+       margin:10px;
+       font-size:22px;
+       cursor:pointer;
+       text-align:;
+       }
+       
+       
+       .nav-links ul li{
+       display:block;
+       }
+       
+       
+       .nav-links{
+       position:absolute;
+       background:#F44336;
+       height:100vh;
+       width:200px;
+       top:0;
+       right:0;
+       display:none;
+       right:-200px;
+       text-align:left;
+       z-index:2;
+       transition:1s;
+       background-color:#232323;
+       }
+       
+       .nav-links ul li a{
+       font-size:25px;
+       font-family:play;
+       text-decoration:none;
+       color:#EBEBEB;
+       }
+       
+       
+       .nav-links ul li a:hover{
+       color:red;
+       text-decoration:none;
+       transition:0.5s;
+       }
+       
+       
+       .nav-links ul{
+       padding:20px;
+       }
+       
+       nav img{
+       width:200px;
+       margin-top:9px;
+       }
+       
+       #head{
+       width:100%;
+       margin-right:0;
+       position:fixed;
+       background-image:url("WebBackground.jpg");
+       box-shadow:0 0 5px black;
+       z-index:2;
+       }
+       
+       
+       
+       
+       .factheading{
+       width:100%;
+       padding:5%;
+       width:90%;
+       margin-left:0;
+       text-align:center;
+       font-family:Atkinson;
+       font-size:25px;
+       color:#043367;
+       font-weight:bold;
+       }
+       
+       .fact1{
+       width:90%;
+       font-family:Tahoma,Arial,sans-serif;
+       font-size:18px;
+       margin-left:5%;
+       text-align:justify;
+       } 
+       
+       .fact11{
+       color:#084578;
+       font-size:24px;
+       width:100%;
+       font-weight:bold;
+       margin-left:1%;
+       text-decoration:none;
+       font-family:Arial,sans-serif;
+       }
+       
+       
+       .fact1img{
+       width:90%;
+       height:auto;
+       margin-left:5%;
+       border-radius:1px;
+       }
+       
+       #more {display: none;}
+       
+       #myBtn{
+       width:90%;
+       margin-left:5%;
+       font-size:150%;
+       color:#184FA7;
+       font-weight:bold;
+       background-color:white;
+       border-radius:2px;
+       height:100%;
+       }
+       
+       #myBtn:hover{
+       color:teal;
+       background-color:whitesmoke;
+       }     
+       
+       }    
+       
+       
+ </style>
+ 
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+         
+         
+         <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         
+         </head>
+         
+         <body>
+         <div id="head">
+         <nav>
+         <a ><img src="logo.png"></img></a>
+         <div class="nav-links" id="navLinks">
+         <i class="fa fa-times" style="font-size:30px; font-weight:light;" onclick="hideMenu()"></i>
+         <ul>
+         <li><a href="index.html">HOME</a></li>
+         <li><a href="Fact Blog.html">FACTS</a></li>
+         <li><a href="Earn Money Online Blog.html">BLOGS</a></li>
+         <li><a href="Contact Page.html">CONTACT</a></li>
+         <li><a href="About Page.html">ABOUT</a></li>
+         </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+         </nav>
+         </div>    <br><br><br>
+         
+         
+   
+ <p class="factheading">30-Strange Facts About Global Issues that may Cause Big Problems</p>
+       <br>
+       <br>
+   <p>
+   
+    <a class="fact11">#Fact.1 -</a><br><br><p class="fact1">The board game Monopoly, which first became available in 1935, became immensely popular perhaps because players could become rich-at least in their imagination.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact1img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.2 -</a><br><br><p class="fact1">The world's largest stockpile of gold can be found five stories underground inside the Federal Reserve Bank of New York's vault and it holds 25% of the world's gold reserve (540,000 gold bars). While it contains more gold than Fort Knox, most of it belongs to foreign governments.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact2img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.3 -</a><br><br><p class="fact1">The largest gold nugget ever found is the "Welcome Stranger" discovered by John Deason and Richard Oates in Australia on February 5, 1869. The nugget is 10 by 25 inches and yielded 2,248 ounces of pure gold. It was found just two inches below the ground surface.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact3img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.4 -</a><br><br><p class="fact1">After the initial crash, there was a wave of suicides in the New York's financial district. It is said that the clerks of one hotel even started asking new guests if they needed a room for sleeping or jumping.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact4img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.5 -</a><br><br><p class="fact1">When gold was used as currency, inflation could still occur if the government diluted the gold with other types of metal such as silver, copper, or lead in order to increase the money supply. As the value of each coin lessened, consumers would need more of them to buy services and goods.</p>
+    <br>
+   
+    <br><br><br>
+    
+    <a class="fact11">#Fact.6 -</a><br><br><p class="fact1">The first recorded gold ever discovered in the United States was was a 17-pound nugget found in Cabarrus, North Carolina. When more gold was discovered in Little Meadow Creek, North Carolina, in 1803, the first U.S. gold rush began.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact6img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.7 -</a><br><br><p class="fact1">Venice introduced the gold ducat in 1284 and it became the most popular gold coin in the world for the next 500 years. Ducat is Latin for "duke." It is the currency used in Shakespeare's Romeo and Juliet and is referenced in The Merchant of Venice. In his song "I Ain't the One," rapper Ice Cube sings that "he's getting juiced for his ducats." The ducat is also used in the "Babylon 5" sci-fi series as the name of the Centauri race's money.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact7img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.8 -</a><br><br><p class="fact1">The United States has experienced two currency collapses due to inflation. The first was the Continental Currency during the Revolutionary War. The second was Confederation notes during the Civil War.</p>
+    <br>
+   
+    <br><br><br>
+    
+    <a class="fact11">#Fact.9 -</a><br><br><p class="fact1">In 560 B.C., the Lydians introduced the first gold coin, which was actually a naturally occurring amalgam of gold and silver called electrum. Herodotus criticizes the materialism of the Lydians, who also were the first to open permanent retail shops. When the Lydians were captured by the Persians in 546 B.C., the use of gold coins began to spread.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact9img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.10 -</a><br><br><p class="fact1">The Dow Jones market peaked at 381 on September 3, 1929, and bottomed out at 42 in 1932, which is an amazing 89% decline. It did not reach 381 again until 23 years later in 1955 (that doesn't include inflation losses).</p>
+    <br>
+    
+    <br><br><br>
+    
+    <a class="fact11">#Fact.11 -</a><br><br><p class="fact1">The Turin Papyrus shows the first map of a gold mine in Nubia, a major gold producer in antiquity. Indeed, the Egyptian word for gold was "nub," from gold-rich Nubia. While Egyptian slaves often suffered terribly in gold mines, Egyptian artisans who made gold jewelry for the nobles enjoyed a high, almost priestly status.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact11img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.12 -</a><br><br><p class="fact1">The U.S. was in debt even in its first yearly report on January 1, 1791, in the amount of $75,463,476.52. Every president since Truman has added to the national debt. The debt ceiling has been raised 72 times since 1962, including 18 times under Reagan, eight times under Clinton, seven times under Bush and, as of August 2011, three times under Obama.</p>
+    <br>
+  
+    <br><br><br>
+    
+    <a class="fact11">#Fact.13 -</a><br><br><p class="fact1">Only approximately 142,000 tons of gold have mined throughout history. Assuming the price of gold is $1,000 per ounce, the total amount of gold that has been mined would equal roughly $4.5 trillion. The United States alone circulates or deposits over $7.6 trillion, suggesting that a return to the gold standard would not be feasible. While most scholars agree a return to a gold standard is not feasible, a few gold standard advocates (such as many Libertarians and Objectivists), argue that a return to a gold standard system would ease inflation risks and limit government power.</p>
+    <br>
+    
+    <br><br><br>
+    
+    <a class="fact11">#Fact.14 -</a><br><br><p class="fact1">Gold and copper were the first metals to be discovered by humans around 5000 B.C. and are the only two non-white-colored metals.</p>
+    <br>
+    
+    <br><br><br>
+    
+    <a class="fact11">#Fact.15 -</a><br><br><p class="fact1">Dorothea Lange's (1895-1965) famous photographs of migrant workers in California during the 1930s remain a moving pictorial record of the Great Depression.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact15img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.16 -</a><br><br><p class="fact1">One cubic foot of gold weighs half a ton. The world's largest gold bar weighs 200 kg (440 lb).</p>
+    <br>
+    
+    <br><br><br>
+    
+    <a class="fact11">#Fact.17 -</a><br><br><p class="fact1">In 1599, a Spanish governor in Ecuador taxed the Jivaro tribe so excessively that they executed him by pouring molten gold down his throat. This form of execution was also practiced by the Romans and the Spanish Inquisition.</p>
+    <br>
+    
+    <br><br><br>
+    
+    <a class="fact11">#Fact.18 -</a><br><br><p class="fact1">During the fourteenth century, drinking molten gold and crushed emeralds was used as a treatment for the bubonic plaque.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact18img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.19 -</a><br><br><p class="fact1">The term "gold" is the from the Proto-Indo-European base *ghel / *ghol meaning "yellow," "green," or possibly "bright.'</p>
+    <br>
+   
+    <br><br><br>
+    
+    <a class="fact11">#Fact.20 -</a><br><br><p class="fact1">Today the national debt is $15.2 trillion. This amounts to $48,380 for every person living in the U.S., or $127,431 for every household in the U.S.</p>
+    <br>
+ 
+    <br><br><br>
+    
+    <a class="fact11">#Fact.21 -</a><br><br><p class="fact1">If inflation is controlled, it can be a positive force in the economy. It can stimulate the economy, mitigate recessions, provide profits for businesses, raise wages for workers, and reduce the real amount of debt.</p>
+    <br>
+  
+    <br><br><br>
+    
+    <a class="fact11">#Fact.22 -</a><br><br><p class="fact1">Scholars estimate that nearly 50% of children during the Great Depression did not have adequate food, shelter, or medical care. Many suffered rickets.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact22img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.23 -</a><br><br><p class="fact1">Even though countries such as Germany and France have high output and manageable debt, the size of other countries' debt is putting the whole Eurozone in trouble. Consequently, investors don't want to buy bonds from any European country because even those who have manageable debt might have to assume responsibility for those weaker countries.</p>
+    <br>
+   
+    <br><br><br>
+    
+    <a class="fact11">#Fact.24 -</a><br><br><p class="fact1">Gold melts at 1064.43degree Centigrade. It can conduct both heat and electricity and it never rusts.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact24img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.25 -</a><br><br><p class="fact1">Around 1200 B.C., the Egyptians used unshorn sheepskin to mine for gold dust from the sands of the Black Sea. This practice is most likely the inspiration for the "Golden Fleece.'</p>
+    <br>
+    
+    <br><br><br>
+    
+    <a class="fact11">#Fact.26 -</a><br><br><p class="fact1">The U.S. government pays more than $1 billion each day just on interest on its debt. It spends $10 billion a day for all the services it provides.</p>
+    <br>
+
+    <br><br><br>
+    
+    <a class="fact11">#Fact.27 -</a><br><br><p class="fact1">In 2008, U.S. households lost an estimated 18% of their net worth, equaling approximately an $11.2 trillion loss. This collapse was the largest since the Federal Reserve began tracking household wealth after WWII.</p>
+    <br>
+   
+    <br><br><br>
+    
+    <a class="fact11">#Fact.28 -</a><br><br><p class="fact1">As news of the stock market crash spread, customers rushed to their banks to withdraw their money, sparking disastrous "bank runs." Nobel prize-winning economist Milton Friedman argues that the 1930s market crash itself did not cause the depression, but rather it was the collapse of the banking system during waves of public panic during 1930-1933.</p>
+    <br>
+    <img class="fact1img" src="Web/Globalissuesfact28img.jpg"></img>
+    <br><br><br>
+    
+    <a class="fact11">#Fact.29 -</a><br><br><p class="fact1">The value of gold has been used as the standard for many currencies. After WWII, the United States created the Bretton Woods System, which set the value of the U.S. dollar to 1/35th of a troy ounce (888.671 mg) of gold. This system was abandoned in 1971 when there was no longer enough gold to cover all the paper money in circulation.</p>
+    <br>
+   
+    <br><br><br>
+    
+    <a class="fact11">#Fact.30 -</a><br><br><p class="fact1">On "Black Tuesday," October 29, 1929, the market lost $14 billion, making the loss for that week an astounding $30 billion. This was ten times more than the annual federal budget and far more than the U.S. had spent in WWI. Thirty billion dollars would be equivalent to $377,587,032,770.41 today.</p>
+    <br>
+   
+  
+    
+   <!---------javascript for toggle------->
+   
+   <script type="text/javascript">
+   
+   var navLinks = document.getElementById("navLinks");
+   
+   function showMenu(){
+   navLinks.style.right = "0";
+   navLinks.style.display = "inline";
+   
+   }
+   function hideMenu(){
+   navLinks.style.right = "-200px";
+   navLinks.style.display = "none"
+   }
+   
+   </script>
+   
+    
+ 
+</html>

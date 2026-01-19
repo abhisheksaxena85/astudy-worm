@@ -1,0 +1,825 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Home Page</title> 
+ 
+ <style>
+   
+   *{
+   margin:0;
+   padding:0;
+   font-family: 'Noto Sans TC', sans-serif;
+   }
+       
+   .header{
+   min-height:400px;
+   width:100%;
+   background-image:url("Web background.jpg");
+   background-position:center;
+   background-size:cover;
+   }    
+       
+nav{
+   display:flex;
+   padding:2% 6%;
+   justify-content:space-between;
+   align-items:center;
+   }
+       
+  nav img{
+   width:220px;
+  }  
+       
+ .nav-links{
+   flex:1;
+   text-align:right;
+ }
+ 
+.nav-links ul li{
+     list-style:none;
+     display:inline-block;
+     padding:8px 12px;
+     position:relative;
+}
+       
+.nav-links ul li a{
+     color:white; 
+     text-decoration:none;
+     font-size:13px;   
+ }    
+       
+.nav-links ul li::after{
+     content:'';
+     width:0%;
+     height:2px;
+     display:block;
+     margin:auto;
+     background:#F44336;
+     transition:0.5s;
+ }      
+       
+ .nav-links ul li:hover::after{
+     width:100%;
+ }
+       
+   
+
+ .text-box{
+   width:100%;
+   color:white;
+   text-align:left;
+ } 
+   
+ .text-box h1{
+   width:50%;
+   text-align:center;
+   color:#FFFF;
+   font-family:play;
+   margin:10px;
+   font-size:180%;
+ }  
+       
+ .text-box p{
+ width:50%;
+ text-align:center;
+ color:#E7E7E7;
+ opacity:0.4;
+ font-size:60%;
+ }    
+       
+ .text-box a{
+   width:100%;
+   color:black;
+   text-align:center;
+   border:1px solid white;
+   text-decoration:none;
+   border-radius:1px;
+   font-size:100%;
+   background-color:#4B8CC0;
+   }
+       
+     nav .fa{
+     display:none;
+     }     
+     
+ #second-heading{
+ width:40%;
+ color:#FF742B;
+ font-size:160%;
+ margin:10px;
+ opacity:1;
+ font-family:Arial,sans-serif;
+ font-weight:bold;
+ }
+ 
+ 
+ 
+    .main{
+      background:#F9F9F9;
+       width:100%;
+       margin:auto;
+       text-align:center;
+  
+       }
+       
+    .main h1{
+    font-size:30px;
+    color:#7F56BE;
+    background:#F0F0F0;
+    font-weight:600;
+    text-align:center;
+    }   
+    
+    #fact-box{
+    width:100%;
+    margin-top:5%;
+    display:flex;
+    list-type:row;
+    justify-content:space-between;
+}
+
+     .fact{
+       width:30%;
+       background:white;
+       justify-content:space-between;
+       margin:20px;
+       box-shadow:0 0 6px black;
+       border-radius:2px; 
+     }
+     
+     .fact:hover{
+      opacity:0.8;
+      box-shadow:0 0 2px black;
+     }
+   
+   
+    .fact a{
+      font-size:15px;
+      font-weight:bold;
+      font-family:monospace;
+      color:black;
+      text-decoration:none;
+    }
+    
+    .fact-img{
+    width:90%;
+    height:auto;
+    }
+    
+   button{
+   width:200px;
+   background:#E14C5D;
+   transition:0.5s;
+   border-radius:3px;
+   } 
+    
+   button a{
+    color:#F9F9F9;
+    text-decoration:none;
+   }
+   button:hover{
+   background:#64C668;
+   }
+    
+    .Learn-to-earn{
+      width:100%;
+      height:auto;
+      color:white;
+     font-size:12px;
+      box-shadow:0 0 10px black;
+      background:#2A2A2A;
+    }
+    
+    .Learn-earn{
+    color:#D5D5D5;
+    opacity:0.8;
+    text-align:center;
+    font-size:9px;
+    }
+      
+    .youtube{
+    margin:auto;
+    background:#F9F9F9;
+    text-align:center;
+    }
+      
+     #youtube h1{
+     width:auto;
+     color:#303030;
+     font-size:26px;
+     font-family:monospace;
+     font-weight:bold;
+     }
+    
+    #youtube h3{
+    color:#BF5037;
+    font-weight:bold; 
+    }
+    
+    #youtube h4{
+     font-size:27px;
+     color:#2C72A9;
+    }
+    
+    #channel-logo{
+    width:200px;
+    border-radius:5px;
+    }
+    
+    .subscribe-button{
+      width:300px;
+      border-radius:0px;
+    }
+   
+   
+    
+    
+    
+              .footer{
+              background-color:#202020;
+              margin:0;
+              padding:0;
+              width:auto; 
+              height:10% ;
+              text-align:center;
+              color:white;
+              }   
+              
+              
+              
+              
+              .follow{
+              color:F9F9F9;
+              text-align:center;
+              font-family:karla;
+              font-size:110%;  
+              padding:;
+              margin-left:3%;
+              font-weight:lighter;
+              text-align:left;
+              word-spacing:;
+              }  
+              
+              .last{
+              color:#EBEBEB;
+              font-size:100%;
+              font-family:keania;
+              font-weight:normal;
+              width:auto;
+              }
+              
+              
+              .footermenu{
+              list-style-type:none;
+              font-family:keania; 
+              width:auto;	 
+              font-size:110%;
+              word-spacing:;
+              text-align:left;
+              margin-left:3%;
+              color:#F5F5F5;
+              font-weight:lighter;
+              }
+              
+              .footericons{
+              
+              width:100%;
+              font-size:200%;
+              text-align:left;
+              text-decoration:none;
+              }
+         
+              .fa {  
+              padding:;  
+              text-align:center;    
+              font-size:100%;  
+              width:6%;  
+              text-decoration:none;
+              }  
+              .fa-facebook {
+              background:#;  
+              border-radius:10%;  
+              color: white;  
+              }  
+              .fa-twitter {
+              background:#;   
+              border-radius:10%;
+              color: white;  
+              }  
+              
+              .fa-instagram { 
+              background:#;
+              border-radius:10%;  
+              color: white;  
+              }  
+              .fa-youtube {
+              background:#;  
+              border-radius:10%;  
+              color: white;  
+              }  
+              .fa-google {  
+              background:#;
+              border-radius:10%;   
+              color: white;  
+              }  
+              
+              .fa:hover {  
+              color:white;
+              }  
+              
+              position{
+              color:black;
+              }
+              
+              
+           h5{
+           width:auto;
+           font-size:180%;
+           font-family:fantasy;
+           padding:3%;
+           color:pink;
+           text-align:left;
+           margin:0;
+              } 
+              
+    
+    
+ @media all and (max-width:768px){
+      
+     nav .fa{
+      display:block;
+      color:#FFF;
+      margin:10px;
+      font-size:22px;
+      cursor:pointer;
+     }
+
+  
+     .nav-links ul li{
+      display:block;
+     }
+     
+     .header{
+      width:100%;
+      background-image:url("Web background.jpg");
+      height:500px;
+      background-size:cover;
+     }
+     .nav-links{
+     position:absolute;
+     background:#F44336;
+     height:100vh;
+     width:200px;
+     top:0;
+     right:0;
+     display:none;
+     right:-200px;
+     text-align:left;
+     z-index:2;
+     transition:1s;
+     background-color:#232323;
+     }
+     
+    .nav-links ul li a{
+      font-size:25px;
+      font-family:play;
+      text-decoration:none;
+      color:#EBEBEB;
+    }
+    
+    
+    .nav-links ul li a:hover{
+     color:red;
+     text-decoration:none;
+     transition:0.5s;
+    }
+    
+    
+     .nav-links ul{
+       padding:20px;
+     }
+       
+     nav img{
+      width:200px;
+      margin-top:9px;
+     } 
+       
+    .text-box{
+     height:100vh;
+     margin-top:100px;
+    }   
+       
+       
+    .text-box h1{
+    width:100%;
+    font-size:42px;
+    margin:0;
+    text-align:center;
+    }   
+      
+    .text-box p{
+     width:100%;
+     font-size:10px;
+     text-align:center;
+    }
+      
+    #head{
+     width:100%;
+     margin-right:0;
+     position:fixed;
+     background-image:url("WebBackground.jpg");
+     box-shadow:0 0 5px black;
+     z-index:2;
+    }
+        
+   #second-heading{
+     width:auto;
+     color:#FF742B;
+     font-size:30px;
+     opacity:1;
+     font-family:Arial,sans-serif;
+     font-weight:bold;
+   }
+   
+   
+   .fact{
+   width:auto;
+   background:white;
+   justify-content:space-between;
+   margin:20px;
+   box-shadow:0 0 6px black;
+   border-radius:2px; 
+   display:inline-table;
+   }
+   #fact-box{
+    width:340px;
+    height:auto;
+    margin-top:5%;
+    display:inline-block;
+    list-type:row;
+    justify-content:space-between;
+   }
+   
+   .Learn-to-earn{
+     width:100%;
+     height:auto;
+     color:white;
+     font-size:20px;
+     box-shadow:0 0 10px black;
+     background:#2A2A2A;
+   }
+   
+   .Learn-earn{
+   color:#D5D5D5;
+   opacity:0.8;
+   text-align:center;
+   font-size:11px;
+   }
+       
+   .footer{
+   background:#202020;
+   margin:0;
+   padding:0;
+   width:auto; 
+   height:auto;
+   word-spacing:10px;
+   text-align:center;
+   color:white;
+   }   
+   
+   
+   
+   
+   .follow{
+   color:#F2F2F2;
+   text-align:center;
+   font-family:karla;
+   font-size:20px;  
+   margin-left:3%;
+   font-weight:lighter;
+   text-align:left;
+   }  
+   
+   .last{
+   color:#EBEBEB;
+   font-size:10px;
+   font-family:keania;
+   font-weight:normal;
+   width:auto;
+   word-spacing:0;
+   }
+   
+   
+   .footermenu{
+   list-style-type:none;
+   font-family:keania; 
+   width:auto;	 
+   font-size:12px;
+   word-spacing:;
+   text-align:left;
+   margin-left:3%;
+   color:#F5F5F5;
+   font-weight:lighter;
+   }
+   
+   .footericons{
+   
+   width:90%;
+   font-size:200%;
+   text-align:left;
+   padding:3%;
+   }
+   
+   .fa {  
+   padding:;  
+   text-align:center;    
+   font-size:100%;  
+   width:6%;  
+   }  
+   .fa-facebook {
+   background:#;  
+   border-radius:10%;  
+   color: white;  
+   }  
+   .fa-twitter {
+   background:#;   
+   border-radius:10%;
+   color: white;  
+   }  
+   
+   .fa-instagram { 
+   background:#;
+   border-radius:10%;  
+   color: white;  
+   }  
+   .fa-youtube {
+   background:#;  
+   border-radius:10%;  
+   color: white;  
+   }  
+   .fa-google {  
+   background:#;
+   border-radius:10%;   
+   color: white;  
+   }  
+   
+   .fa:hover {  
+   color:white;
+   }  
+   
+   position{
+   color:black;
+   }
+   
+   
+   h5{
+   width:auto;
+   font-size:180%;
+   font-family:fantasy;
+   padding:3%;
+   color:pink;
+   text-align:left;
+   margin:0;
+   } 
+   
+   }
+       
+ </style>
+ 
+ 
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+ 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet"> 
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+
+
+          
+          <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           
+
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">          
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap" rel="stylesheet">
+</head>
+           
+<body> 
+  
+   <!--------First Section------  --> 
+    
+       <section class="header">
+            <div id="head">
+                 <nav>
+                     <a ><img src="logo.png"></img></a>
+                      <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" style="font-size:30px; text-align:right; font-weight:light;" onclick="hideMenu()"></i>
+                          <ul>
+                              <li><a href="index.html">HOME</a></li>
+                              <li><a href="Fact Blog.html">FACTS</a></li>
+                              <li><a href="Earn Money Online Blog.html">BLOGS</a></li>
+                              <li><a href="Contact Page.html">CONTACT</a></li>
+                              <li><a href="About Page.html">ABOUT</a></li>
+                          </ul>
+                      </div>
+                     
+                      <i class="fa fa-bars" onclick="showMenu()"></i>
+                 
+                 </nav>
+              </div>
+              <br>
+                    
+ 
+                  
+                  <div class="text-box">
+                       <h1>Learn with us<br>AStudy-WORM<br>.com</h1><br>
+                       <p>Everyone has a full right to learn anything,but if learnig is so much complex
+                         then,it may create a problem.So,we started a new and easiest way to get knowledge
+                         for zero cost.</p>
+                         <br><br><br>
+                       
+                       <p id="second-heading">Here You Can Learn Awsome Facts</p>
+                 </div>
+                 
+       </section>
+   
+   <!-----------Second Section--------->
+ 
+       <section class="main">
+                <h1>Facts About</h1>
+                
+                   <div id="fact-box">
+                        <div class="fact">
+                           <a href="Human Body Fact Blog.html">Human Body & Psycology</a>
+                           <a href="Human Body Fact Blog.html"><img class="fact-img" src="Web/Humanbodyfact.jpg"></img></a>
+                        </div>
+                        <div class="fact">
+                           <a href="Space Fact Blo.html">Space & It's Technology</a>
+                           <a href="Space Fact Blog.html"><img class="fact-img" src="Web/Spacefact.jpg"></img></a>
+                        </div>
+                        
+                        <div class="fact">
+                           <a href="Birds Fact Blog.html">Birds And Their Unique Abilites</a>
+                           <a href="Birds Fact Blog.html"><img class="fact-img" src="Web/Birdsfact.jpg"></img></a>
+                        </div>
+                        
+                        <div class="fact">
+                           <a href="Math Fact Blog.html">Mathmatic & Their Tricks</a>
+                           <a href="Math Fact Blog.html"><img class="fact-img" src="Web/Mathfact.jpg"></img></a>
+                        </div>
+                   </div>
+       
+                   <div id="fact-box">
+                        <div class="fact">
+                           <a href="Nuclear Energy Fact Blog.html">Nuclear Energy & It's Pollution</a>
+                           <a href="Nuclear Energy Fact Blog.html"><img class="fact-img" src="Web/Nuclearenergyfact.jpg"></img></a>
+                        </div>
+                        
+                        <div class="fact">
+                           <a href="Technology Fact Blog.html">Technology Development</a>
+                           <a href="Technology Fact Blog.html"><img class="fact-img" src="Web/Technologyfact.jpg"></img></a>
+                        </div>
+        
+                        <div class="fact">
+                           <a href="Music Fact Blog.html">Music And It's effects</a>
+                           <a href="Music Fact Blog.html"><img class="fact-img" src="Web/Musicfact.jpg"></img></a>
+                        </div>
+       
+                        <div class="fact">
+                           <a href="Money Fact Blog.html">Money And It's  Origen </a>
+                           <a href="Money Fact Blog.html"><img class="fact-img" src="Web/Moneyfact.jpg"></img></a>
+                        </div>
+                   </div>
+                         <br><br>
+                       <button>
+                        <a href="Fact Blog.html"><h2>GET MORE..</h2></a>
+                      </button>
+                         <br><br><br><br>
+            
+                   <div class="Learn-to-earn">
+                         <br>
+                        <h3>You Can Learn Here that<br>How Can You Make Money At Home Without Investment</h3>
+                        <br>
+                        <p class="Learn-earn">Now a days, Everyone wants to earn $ Dollers, to fill their need not only adults but also 
+                                              teen agers during their study.But most of peoples don't know that From How Many ways they can Earn
+                                              But here You will get know about few easy ways, From where you can earn very well without doing any type of 
+                                              Investment. </p><br>
+                        <a href="Earn Money Online Blog.html"><img src="Web/Learntoearn.jpg" width="350px" ></img></a>
+                        <br><br><br>
+                        <button>
+                         <a href="Earn Money Online Blog.html"><h2>Know More..</h2></a>
+                        </button><br><br>  
+                   </div>
+       </section>
+              
+        <section class="youtube">
+                   <div id="youtube"><br> 
+                       <h1>Our YouTube Channel</h1><br><br>  
+                       <h3>MR.REAL MAKER</h3>
+                       <a href="https://youtube.com/channel/UCgObkxrTfL8i82tKlEePzlw"><img id="channel-logo" src="Web/Mr real maker logo.jpg" width="60%"></img></a><br><br> 
+                       <a href="https://youtube.com/channel/UCgObkxrTfL8i82tKlEePzlw"><img class="subscribe-button" src="Web/Subscribe button.png" width="70%" ></img></a><br><br>
+                       <h4>Some Arduino Projects</h4> 
+                   </div>
+                   
+                   <div id="fact-box">
+                        <div class="fact">
+                             <a href="https://youtube.com/channel/UCgObkxrTfL8i82tKlEePzlw">Falling Detector Arduino Project<iframe width="90%" height="auto" src="https://www.youtube.com/embed/Tu5gz9Dmmmc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>     
+                       </div>
+                       
+                       <div class="fact">
+                           <a href="https://www.youtube.com/embed/BBi6ENBmSu0">Human Following Robot Car<iframe width="90%" height="auto" src="https://www.youtube.com/embed/BBi6ENBmSu0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                       </div>
+                   
+                       <div class="fact">
+                           <a href="https://www.youtube.com/embed/q7AhM_JKIKg">Password Door Lock Project<iframe width="90%" height="auto" src="https://www.youtube.com/embed/q7AhM_JKIKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></a>
+                       </div>
+                   
+                   
+        </section>
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
+   
+   
+   
+   
+   
+   
+   
+   
+   <footer class="footer">
+     <h5>About</h5>
+   
+   <div class="footermenu">
+   <li>Some FACTS</li>
+   <li>Blogs</li>
+   <li>Theories</li>
+   <li>Recent Updates</li>
+   </div><br>
+   <h2 class="follow">Follow Us On</h2>
+   
+   <br>
+   <div class="footericons">
+   
+   <a href="https://youtube.com/channel/UCgObkxrTfL8i82tKlEePzlw" class="fa fa-youtube"></a>  
+   
+   <a href="https://www.google.com" class="fa fa-google"></a>  
+   </div>
+   <br>
+   
+   <h2 class="last"> &copy;Copyright 2021 AStudy-WORM All Rights Reserved.</h2>
+   
+   
+   </footer>
+   
+  <!---------javascript for toggle------->
+   
+  <script type="text/javascript">
+  
+        var navLinks = document.getElementById("navLinks");
+        
+        function showMenu(){
+            navLinks.style.right = "0";
+            navLinks.style.display = "inline";
+        
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+            navLinks.style.display = "none"
+        }
+        
+        
+        
+        
+        
+ </script>
+ 
+</body>
+
+</html>
